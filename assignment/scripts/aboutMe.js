@@ -34,7 +34,7 @@ let pets = 1;
 let friendsPets = 2;
 
 // 11 - Add two pets to your `pets` variable
-pets +=2;
+pets += 2;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 3;
@@ -76,20 +76,25 @@ else {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = 6
-if(pets > friendsPets && pets < mostPets){
-  console.log(mostPets);
+let mostPets;
+if (pets > friendsPets){
+  mostPets = pets;
 }
+else {
+  mostPets = friendsPets
+}
+console.log(mostPets)
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-switch (mostPets){
-  case pets > friendsPets:
+switch (pets > friendsPets){
+  case  mostPets = friendsPets:
   break;
-  case pets < mostPets:
+  case mostPets = pets:
   break;
 }
 console.log(mostPets)
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-mostPets > pets > friendsPets ? mostPets : console.log(mostPets);
+
+adventurous ? console.log("Adventures are great!") : console.log("How about we stay home?");
